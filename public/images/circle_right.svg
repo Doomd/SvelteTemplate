@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52">
+  <defs>
+    <filter id="Rectangle_4" x="0" y="0" width="52" height="52" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect width="19.566" height="11.216" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Right_Arrow" data-name="Right Arrow" transform="translate(9 9)">
+    <g transform="matrix(1, 0, 0, 1, -9, -9)" filter="url(#Rectangle_4)">
+      <rect id="Rectangle_4-2" data-name="Rectangle 4" width="34" height="34" rx="17" transform="translate(43 9) rotate(90)" fill="#fff"/>
+    </g>
+    <g id="Icons_24px_Arrow_Down" data-name="Icons – 24px / Arrow Down" transform="translate(24.216 7) rotate(90)" clip-path="url(#clip-path)">
+      <path id="Icon" d="M19.566,9.781l-1.435,1.435L9.783,2.868,1.435,11.216,0,9.781,9.781,0Z" fill="#707070"/>
+    </g>
+  </g>
+</svg>

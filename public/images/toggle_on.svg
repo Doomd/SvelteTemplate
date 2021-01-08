@@ -1,0 +1,5 @@
+<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.0416667,0,0,0.0416667,0,1.33333)">
+        <path d="M384,64L192,64C86,64 0,150 0,256C0,362 86,448 192,448L384,448C490,448 576,362 576,256C576,150 490,64 384,64ZM384,400C304.4,400 240,335.6 240,256C240,176.4 304.4,112 384,112C463.6,112 528,176.4 528,256C528,335.6 463.6,400 384,400Z" style="fill-rule:nonzero;"/>
+    </g>
+</svg>

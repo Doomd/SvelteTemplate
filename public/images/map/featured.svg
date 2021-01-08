@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 60 78.235" style="enable-background:new 0 0 60 78.235;" xml:space="preserve" width="30px" height="38px">
+<style type="text/css">
+	.st0{opacity:0.4;fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+	.st2{opacity:0.4;fill:url(#SVGID_2_);}
+	.st3{fill:#00A651;}
+	.st4{fill:#FBB040;}
+	.st5{fill:#39B54A;}
+	.st6{fill:#EC2029;}
+	.st7{opacity:0.4;fill:url(#SVGID_3_);}
+	.st8{fill:#27AAE1;}
+	.st9{opacity:0.4;fill:url(#SVGID_4_);}
+	.st10{opacity:0.4;fill:url(#SVGID_5_);}
+	.st11{opacity:0.4;fill:url(#SVGID_6_);}
+	.st12{opacity:0.4;fill:url(#SVGID_7_);}
+</style>
+<g>
+	<g>
+		<circle class="st1" cx="30.211" cy="30.584" r="21.704"/>
+
+			<radialGradient id="SVGID_1_" cx="-2413.5144" cy="-4142.1582" r="172.7557" gradientTransform="matrix(0.0914 0 0 0.0263 250.5605 182.5485)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#000000"/>
+			<stop  offset="1" style="stop-color:#000000;stop-opacity:0"/>
+		</radialGradient>
+		<ellipse class="st0" cx="29.893" cy="73.695" rx="15.795" ry="4.54"/>
+		<path class="st3" d="M31.385,70.192c-0.014,0.016-0.027,0.031-0.041,0.047C31.362,70.217,31.375,70.202,31.385,70.192z"/>
+		<path class="st1" d="M29.995,73.695c-1.019,0-1.988-0.44-2.66-1.207c-4.108-4.691-20.017-22.854-20.04-22.88l-0.012-0.013
+			C4.978,46.929,3.18,43.92,1.94,40.653C0.653,37.264,0,33.68,0,30.002C0,13.459,13.458,0,29.999,0C46.542,0,60,13.459,60,30.002
+			c0,7.085-2.469,13.904-6.951,19.201L53.045,49.2c-0.438,0.508-3.117,3.573-20.391,23.289
+			C31.983,73.256,31.013,73.695,29.995,73.695z"/>
+		<path class="st4" d="M57.531,30.002c0,6.722-2.422,12.944-6.367,17.607c-0.006,0.008-16.462,18.797-20.367,23.254
+			c-0.425,0.485-1.18,0.485-1.605,0C25.366,66.493,9.159,47.99,9.151,47.981c-4.166-4.819-6.683-11.066-6.683-17.98
+			c0-15.182,12.349-27.533,27.53-27.533S57.531,14.82,57.531,30.002z"/>
+		<line class="st3" x1="31.407" y1="70.167" x2="31.389" y2="70.187"/>
+	</g>
+	<polygon class="st1" points="30,20.111 33.295,26.787 40.661,27.857 35.331,33.053 36.589,40.391 30,36.926 23.411,40.391
+		24.669,33.053 19.339,27.857 26.705,26.787 	"/>
+</g>
+</svg>

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="translate(1 1)">
+        <path d="M-4,12C-14.486,12 -23,3.038 -23,-8L-20.15,-8C-20.15,1.383 -12.913,9 -4,9L-4,12Z">
+            <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="0 20 20"
+                to="360 20 20"
+                dur="1.9s"
+                repeatCount="indefinite" />
+        </path>
+
+        <path d="M-4,9C-12.913,9 -20.15,1.383 -20.15,-8L-17.3,-8C-17.3,-0.273 -11.34,6 -4,6L-4,9Z">
+            <!-- <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="0 20 20"
+                to="360 20 20"
+                dur="1.9s"
+                repeatCount="indefinite" /> -->
+        </path>
+
+        <path d="M-14.45,-8C-14.45,-1.929 -9.768,3 -4,3L-4,6C-11.34,6 -17.3,-0.273 -17.3,-8L-14.45,-8Z">
+            <!-- <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="0 20 20"
+                to="360 20 20"
+                dur="1.9s"
+                repeatCount="indefinite" /> -->
+        </path>
+    </g>
+</svg>
