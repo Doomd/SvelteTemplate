@@ -1,138 +1,124 @@
 .map_icon {
-  -webkit-mask: url(/images/map.svg) no-repeat center / contain;
-  mask: url(/images/map.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/map.svg) no-repeat center / contain;
+  mask: url(/images/svg/map.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .list_icon {
-  -webkit-mask: url(/images/list.svg) no-repeat center / contain;
-  mask: url(/images/list.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/list.svg) no-repeat center / contain;
+  mask: url(/images/svg/list.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .profile_icon {
-  -webkit-mask: url(/images/user-alt.svg) no-repeat center / contain;
-  mask: url(/images/user-alt.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/user-alt.svg) no-repeat center / contain;
+  mask: url(/images/svg/user-alt.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .search_icon {
-  -webkit-mask: url(/images/search.svg) no-repeat center / contain;
-  mask: url(/images/search.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/search.svg) no-repeat center / contain;
+  mask: url(/images/svg/search.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .heart_icon {
-  -webkit-mask: url(/images/heart.svg) no-repeat center / contain;
-  mask: url(/images/heart.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/heart.svg) no-repeat center / contain;
+  mask: url(/images/svg/heart.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .heart_solid_icon {
-  -webkit-mask: url(/images/heart_solid.svg) no-repeat center / contain;
-  mask: url(/images/heart_solid.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/heart_solid.svg) no-repeat center / contain;
+  mask: url(/images/svg/heart_solid.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .toggle_on_icon {
-  -webkit-mask: url(/images/toggle_on.svg) no-repeat center / contain;
-  mask: url(/images/toggle_on.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/toggle_on.svg) no-repeat center / contain;
+  mask: url(/images/svg/toggle_on.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .toggle_off_icon {
-  -webkit-mask: url(/images/toggle_off.svg) no-repeat center / contain;
-  mask: url(/images/toggle_off.svg) no-repeat center / contain;
-  width: 100%;
-  height: 100%;
-}
-
-.toggle_on_big_icon {
-  -webkit-mask: url(/images/toggle-on.svg) no-repeat center / contain;
-  mask: url(/images/toggle-on.svg) no-repeat center / contain;
-  width: 100%;
-  height: 100%;
-}
-
-.toggle_off_big_icon {
-  -webkit-mask: url(/images/toggle-off.svg) no-repeat center / contain;
-  mask: url(/images/toggle-off.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/toggle_off.svg) no-repeat center / contain;
+  mask: url(/images/svg/toggle_off.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .chevron_down {
-  -webkit-mask: url(/images/chevron-down.svg) no-repeat center / contain;
-  mask: url(/images/chevron-down.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/chevron-down.svg) no-repeat center / contain;
+  mask: url(/images/svg/chevron-down.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .chevron_up {
-  -webkit-mask: url(/images/chevron-up.svg) no-repeat center / contain;
-  mask: url(/images/chevron-up.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/chevron-up.svg) no-repeat center / contain;
+  mask: url(/images/svg/chevron-up.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .facebook {
-  -webkit-mask: url(/images/facebook.svg) no-repeat center / contain;
-  mask: url(/images/facebook.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/facebook.svg) no-repeat center / contain;
+  mask: url(/images/svg/facebook.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .instagram {
-  -webkit-mask: url(/images/instagram.svg) no-repeat center / contain;
-  mask: url(/images/instagram.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/instagram.svg) no-repeat center / contain;
+  mask: url(/images/svg/instagram.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .reddit {
-  -webkit-mask: url(/images/reddit.svg) no-repeat center / contain;
-  mask: url(/images/reddit.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/reddit.svg) no-repeat center / contain;
+  mask: url(/images/svg/reddit.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .twitter {
-  -webkit-mask: url(/images/twitter.svg) no-repeat center / contain;
-  mask: url(/images/twitter.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/twitter.svg) no-repeat center / contain;
+  mask: url(/images/svg/twitter.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .youtube {
-  -webkit-mask: url(/images/youtube.svg) no-repeat center / contain;
-  mask: url(/images/youtube.svg) no-repeat center / contain;
+  -webkit-mask: url(/images/svg/youtube.svg) no-repeat center / contain;
+  mask: url(/images/svg/youtube.svg) no-repeat center / contain;
   width: 100%;
   height: 100%;
 }
 
 .icon_profile {
-  -webkit-mask-image: url(/images/store.svg);
-  mask-image: url(/images/store.svg);
+  -webkit-mask-image: url(/images/svg/store.svg);
+  mask-image: url(/images/svg/store.svg);
 }
 
 .icon_call {
-  -webkit-mask-image: url(/images/mobile.svg);
-  mask-image: url(/images/mobile.svg);
+  -webkit-mask-image: url(/images/svg/mobile.svg);
+  mask-image: url(/images/svg/mobile.svg);
 }
 
 .icon_close {
-  -webkit-mask-image: url(/images/times.svg);
-  mask-image: url(/images/times.svg);
+  -webkit-mask-image: url(/images/svg/times.svg);
+  mask-image: url(/images/svg/times.svg);
 }
 
 .icon_suggest {
-  -webkit-mask-image: url(/images/bullhorn.svg);
-  mask-image: url(/images/bullhorn.svg);
+  -webkit-mask-image: url(/images/svg/bullhorn.svg);
+  mask-image: url(/images/svg/bullhorn.svg);
 }

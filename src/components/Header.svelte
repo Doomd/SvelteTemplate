@@ -1,22 +1,23 @@
 <script>
   // MODULES
   import { Link } from "svelte-routing"
-
-  // COMPONENTS
-  import ColorMode from "./ColorMode.svelte"
 </script>
 
-<logo>
+<div class="logo">
   <Link to="/">Svelte App</Link>
-</logo>
+</div>
+
 <nav>
-  <!-- <div class="header-link">
-    <Link to="/log">Log</Link>
-  </div> -->
+  <div class="header-link">
+    <Link to="/contact">Contact</Link>
+  </div>
+  <div class="header-link">
+    <Link to="/about">About</Link>
+  </div>
 </nav>
 
 <style>
-  logo {
+  .logo {
     display: flex;
     height: 100%;
     justify-content: center;
