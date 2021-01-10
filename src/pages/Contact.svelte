@@ -3,6 +3,6 @@
   export let location
 </script>
 
-<Page heading="Contact" {location}>
+<Page vAlign="flex-start" hAlign="center" heading="Contact" {location}>
   <p>Feel Free to Contact us.</p>
 </Page>

@@ -4,7 +4,9 @@ import commonjs from "@rollup/plugin-commonjs"
 import livereload from "rollup-plugin-livereload"
 import { terser } from "rollup-plugin-terser"
 import css from "rollup-plugin-css-only"
+
 // DOCS: https://github.com/sveltejs/rollup-plugin-svelte
+
 const production = !process.env.ROLLUP_WATCH
 
 function serve() {
@@ -49,9 +51,7 @@ export default {
       // using `include` and `exclude`
       exclude: [
         // "src/pages/test/*.svelte",
-        "src/pages/old/*.svelte",
         // "src/components/test/*.svelte",
-        "src/components/old/*.svelte",
       ],
       // Optionally, preprocess components with svelte.preprocess:
       // https://svelte.dev/docs#svelte_preprocess
@@ -79,11 +79,6 @@ export default {
 
         // enable run-time checks when not in production
         dev: !production,
-        // we'll extract any component CSS out into
-        // a separate file — better for performance
-        // css: (css) => {
-        //   css.write("bundle.css")
-        // },
       },
     }),
     css({ output: "bundle.css" }),

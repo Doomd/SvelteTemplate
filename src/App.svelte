@@ -11,7 +11,7 @@
   import Contact from "./pages/Contact.svelte"
 
   // PROPS
-  export let url = "" //This property is necessary decla
+  export let url = "" // This property is necessary declaration for svelte-routing
 </script>
 
 <Router {url}>

@@ -3,6 +3,6 @@
   export let location
 </script>
 
-<Page vAlign="flex-start" hAlign="center" heading="Welcome" location={location}>
+<Page vAlign="center" hAlign="center" heading="Welcome" {location}>
   Thanks for visiting.
 </Page>
