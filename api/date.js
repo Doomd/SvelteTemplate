@@ -1,3 +1,5 @@
+const fs = require("fs")
+
 module.exports = (req, res) => {
   const date = new Date().toString()
   fs.writeFile("helloworld.txt", "Hello World!", function (err) {
