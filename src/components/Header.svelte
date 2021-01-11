@@ -11,10 +11,10 @@
 </div>
 
 <nav>
-  <div class="header-link">
+  <div class="link">
     <Link to="/contact">Contact</Link>
   </div>
-  <div class="header-link">
+  <div class="link">
     <Link to="/about">About</Link>
   </div>
 </nav>
@@ -36,5 +36,8 @@
     justify-content: flex-end;
     align-items: center;
     flex: 1 1;
+  }
+  .link {
+    margin-left: 15px;
   }
 </style>

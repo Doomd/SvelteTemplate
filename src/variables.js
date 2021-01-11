@@ -1,1 +1,1 @@
-export const siteName = "Svelte Scripts"
+export const siteName = "Svelte Template"
