@@ -1,10 +1,13 @@
 <script>
   // MODULES
   import { Link } from "svelte-routing"
+
+  // EXTERNAL VARIABLES
+  import * as v from "../variables"
 </script>
 
 <div class="logo">
-  <Link to="/">Svelte App</Link>
+  <Link to="/">{v.siteName}</Link>
 </div>
 
 <nav>

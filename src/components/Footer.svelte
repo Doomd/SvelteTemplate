@@ -2,6 +2,9 @@
   // MODULES
   import { Link } from "svelte-routing"
 
+  // EXTERNAL VARIABLES
+  import * as v from "../variables"
+
   // COMPONENTS
   import ColorMode from "./ColorMode.svelte"
 
@@ -11,7 +14,7 @@
 </script>
 
 <copyright>
-  <div class="copyright">&copy;{year} Svelte App</div>
+  <div class="copyright">&copy;{year} {v.siteName}</div>
 </copyright>
 <div class="footer-links">
   <div class="footer-link">
