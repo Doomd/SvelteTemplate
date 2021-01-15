@@ -17,6 +17,9 @@
   <div class="link">
     <Link to="/about">About</Link>
   </div>
+  <div class="link">
+    <Link to="/blog">Blog</Link>
+  </div>
 </nav>
 
 <style>

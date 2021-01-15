@@ -10,6 +10,8 @@
   import About from "./pages/About.svelte"
   import Contact from "./pages/Contact.svelte"
 
+  import Blog from "./pages/blog/Blog.svelte"
+
   // PROPS
   export let url = "" // This property is necessary declaration for svelte-routing
 </script>
@@ -22,8 +24,9 @@
     <main>
       <Route path="/" component={Home} />
       <Route path="about" component={About} />
-
       <Route path="contact" component={Contact} />
+
+      <Route path="blog/*" component={Blog} />
 
       <!-- <Route path="test" component={Test} /> -->
     </main>
