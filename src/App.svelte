@@ -10,7 +10,7 @@
   import About from "./pages/About.svelte"
   import Contact from "./pages/Contact.svelte"
 
-  import Blog from "./pages/blog/Blog.svelte"
+  import Blog from "./pages/blog/Blog2.svelte"
 
   // PROPS
   export let url = "" // This property is necessary declaration for svelte-routing

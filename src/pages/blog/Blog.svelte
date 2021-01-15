@@ -49,6 +49,7 @@
   .blog-list {
     flex: 1;
     min-width: 320px;
+    max-width: 480px;
     background-color: #333;
     padding: 15px;
   }
