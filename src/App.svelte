@@ -1,5 +1,6 @@
 <script>
   import { Router, Route } from "svelte-routing"
+  import { siteName } from "./js/constants"
 
   // COMPONENTS
   import Header from "./components/Header.svelte"
@@ -16,6 +17,9 @@
   export let url = "" // svelte-routing requirement
 </script>
 
+<svelte:head>
+  <title>{siteName}</title>
+</svelte:head>
 <Router {url}>
   <page>
     <header>
