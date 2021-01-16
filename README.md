@@ -1,8 +1,8 @@
 # Svelte / Vercel Deployment
 
-This is a heavily modified svelte-vercel template that up-to-date Svelte related dependancies (as of Jan 2021) and STILL works with vercel deployments (some breaking changes were made by upgrading to the latest modules, but I corrected the rollup.config.js file so everything works).
+This is a heavily modified svelte-vercel template that explicedly uses the most compatible **up-to-date** Svelte related dependancies (as of Jan 2021) and STILL works with vercel deployments (some breaking changes were made by upgrading to the latest modules, but I corrected the rollup.config.js file so everything works).
 
-I also added the svelte-routing package so page routing is built in. I included some example pages and components so it's relatively easy to understand how to make more pages. Note, just as with the vercel default, anthing put into the `/api` directory (like node.js scripts), should work as node.js serverless functions (outside of Svelte's scope). Bear in mind, file writing functionality is still likely not supported. See the original documentation below for more details.
+I also added the `svelte-routing` package so page routing is built in. I included some example pages and components so it's relatively easy to understand how to make more pages. Note, just as with the vercel default, anthing put into the `/api` directory (like node.js scripts), should work as node.js serverless functions (outside of Svelte's scope). Bear in mind, file writing functionality is still likely not supported. See the original documentation below for more details.
 
 ## First steps after cloning this repository
 
@@ -29,14 +29,26 @@ I also added the svelte-routing package so page routing is built in. I included 
    - Run from root directory: `vercel`. It will guide you through setting up and linking your remote repo and deploy your code to a working site!
    - Each time you `git push` your code to `master`, vercel will automatically deploy that code to your vercel site!
 
-## Other Useful Links
+## Post Setup Options
+
+- If you'd like to keep your code "pretty" and organized, in VS Code:
+
+  [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+
+- If you'd just like to use npm packages for the project, from your project root, run:
+  ```
+  npm i --save-dev prettier-plugin-svelte prettier
+  ```
+
+## Useful Links & References
 
 - Official Svelte website: https://svelte.dev
 - `sirv-cli` github: https://github.com/lukeed/sirv
 - `svelte-routing` github: https://github.com/EmilTholin/svelte-routing
+- `prettier-plugin-svelte` github: https://github.com/sveltejs/prettier-plugin-svelte
 
 ## Original Vercel README & Project Links:
 
-- Original [Vercel README](./VERCEL.md)
+- Original [Vercel README](./docs/VERCEL.md)
 - [Deploying Svelte with Vercel](https://vercel.com/guides/deploying-svelte-with-vercel)
 - `svelte-vercel` github: https://github.com/tidiview/svelte-vercel

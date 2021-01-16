@@ -1,3 +1,4 @@
-import { writable } from "svelte/store"
+// This file acts as a single access point for all "stores" organized in the js/stores directory
 
-export let colorMode = writable("dark")
+export * from "./stores/global"
+export * from "./stores/blog"

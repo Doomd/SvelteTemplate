@@ -1,5 +1,5 @@
 const emptyDash = " - "
-const alphaNumeric = /[^a-zA-Z0-9]/
+const alphaNumeric = /[^a-zA-Z0-9]/gi
 const replacement = "_"
 
 export function cleanURL(string) {

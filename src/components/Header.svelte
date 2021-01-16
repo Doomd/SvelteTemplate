@@ -3,23 +3,17 @@
   import { Link } from "svelte-routing"
 
   // EXTERNAL VARIABLES
-  import * as v from "../variables"
+  import { siteName } from "../js/constants"
 </script>
 
 <div class="logo">
-  <Link to="/">{v.siteName}</Link>
+  <Link to="/">{siteName}</Link>
 </div>
 
 <nav>
-  <div class="link">
-    <Link to="/contact">Contact</Link>
-  </div>
-  <div class="link">
-    <Link to="/about">About</Link>
-  </div>
-  <div class="link">
-    <Link to="/blog">Blog</Link>
-  </div>
+  <Link to="/contact" class="link">Contact</Link>
+  <Link to="/about" class="link">About</Link>
+  <Link to="/blog" class="link">Blog</Link>
 </nav>
 
 <style>
@@ -29,7 +23,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   nav {
@@ -40,7 +34,7 @@
     align-items: center;
     flex: 1 1;
   }
-  .link {
+  :global(nav .link) {
     margin-left: 15px;
   }
 </style>

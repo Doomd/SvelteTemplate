@@ -1,59 +1,30 @@
 <script>
-  // MODULES
-  import { onMount } from "svelte"
-
   // STORES
   import { colorMode } from "../js/stores"
+  let localColorMode = localStorage.getItem("colorMode")
+  let light // we'll bind the toggle button to this boolean
+  // If colorMode not set in localStorage:
+  // Default to: > System Preference (if available) > arbitrary default
+  if (
+    localColorMode == "dark" ||
+    (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+      localColorMode != "light")
+  ) {
+    light = false
+  } else {
+    light = true
+  }
+  $: light, toggleColorMode()
 
-  // FUNCTIONS
-  onMount(async () => {
-    const toggleColorButton = document.querySelector(".color-mode-button")
-    if (
-      localStorage.getItem("color-mode") === "dark" ||
-      (window.matchMedia("(prefers-color-scheme: dark)").matches &&
-        !localStorage.getItem("color-mode"))
-    ) {
-      document.documentElement.setAttribute("color-mode", "dark")
-      $colorMode = `dark`
-      toggleColorButton.checked = false
+  function toggleColorMode() {
+    if (light) {
+      $colorMode = "light"
     } else {
-      $colorMode = `light`
-      toggleColorButton.checked = true
+      $colorMode = "dark"
     }
-
-    // const toggleColorButton = document.querySelector(".color-mode-button");
-    if (window.CSS && CSS.supports("color", "var(--primary)")) {
-      // console.log("Color Mode is supported :)");
-      const toggleColorMode = (e) => {
-        // Switch to Light Mode
-        if (e.currentTarget.classList.contains("color-mode-button")) {
-          // console.log(`the clicked target has the light--hidden class`);
-          // Sets the custom html attribute
-          if (e.currentTarget.checked == true) {
-            localStorage.setItem("color-mode", "light") // Sets the user's preference in local storage
-            document.documentElement.setAttribute("color-mode", "light") // sets the html element
-            $colorMode = `light`
-          } else {
-            localStorage.setItem("color-mode", "dark") // Sets the user's preference in local storage
-            document.documentElement.setAttribute("color-mode", "dark") // sets the html element
-            $colorMode = `dark`
-          }
-          return
-        } else {
-          console.log(`This should never happen`)
-        }
-      } // Get the buttons in the DOM
-
-      // Set up event listeners
-      toggleColorButton.addEventListener("change", toggleColorMode)
-    } else {
-      // If the feature isn't supported, then we hide the toggle buttons
-      // console.log(" Color Mode Not Supported :( ");
-      var btnContainer = document.querySelector(".color_mode_wrapper")
-      // var lastHR = document.querySelector(".color_mode_wrapper");
-      btnContainer.classList.add("hide")
-    }
-  })
+    localStorage.setItem("colorMode", $colorMode)
+    document.documentElement.setAttribute("color-mode", $colorMode)
+  }
 </script>
 
 <div class="color_mode_wrapper">
@@ -61,8 +32,9 @@
     <input
       type="checkbox"
       name="checkbox"
-      class="switch  color-mode-button"
-      aria-hidden="true" />
+      class="switch  colorMode-button"
+      aria-hidden="true"
+      bind:checked={light} />
   </div>
   <!-- <div id="selected_theme" class="color_mode_text">Light</div> -->
 </div>
