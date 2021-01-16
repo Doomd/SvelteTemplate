@@ -22,8 +22,8 @@ div#light {
 
   --color_secondary: #999999;
   --color_links: #707070;
-  --color_highlight: #00b5fd;
-  --color_links_hover: #00b5fd;
+  --color_highlight: #ff3e00;
+  --color_links_hover: #ff3e00;
   --color_links_hover_bg: none;
   --shadow_1: 1px 1px 6px 1px rgba(0, 0, 0, 0.4);
   --shadow_1_hover: 0 8px 8px 0 rgba(0, 0, 0, 0.3);
@@ -43,8 +43,8 @@ div#dark {
 
   --color_secondary: #b1b1b1;
   --color_links: #f1f1f1;
-  --color_highlight: #00b5fd;
-  --color_links_hover: #00b5fd;
+  --color_highlight: #ff3e00;
+  --color_links_hover: #ff3e00;
   --color_links_hover_bg: none;
   --shadow_1: 1px 1px 6px 1px rgba(180, 180, 180, 0.2);
   --shadow_1_hover: 0px 0px 6px 3px #00b5fd;

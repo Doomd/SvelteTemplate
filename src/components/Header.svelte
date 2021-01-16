@@ -4,6 +4,8 @@
 
   // EXTERNAL VARIABLES
   import { siteName } from "../js/constants"
+
+  import NavLinks from "./NavLinks.svelte"
 </script>
 
 <div class="logo">
@@ -11,9 +13,7 @@
 </div>
 
 <nav>
-  <Link to="/contact" class="link">Contact</Link>
-  <Link to="/about" class="link">About</Link>
-  <Link to="/blog" class="link">Blog</Link>
+  <NavLinks />
 </nav>
 
 <style>
@@ -24,6 +24,12 @@
     align-items: center;
     padding: 0;
     font-size: 2.5em;
+  }
+  :global(.logo a) {
+    color: var(--color_highlight);
+  }
+  :global(.logo a:hover) {
+    color: var(--color_primary);
   }
 
   nav {

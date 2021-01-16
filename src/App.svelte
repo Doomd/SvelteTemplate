@@ -7,10 +7,8 @@
   import Footer from "./components/Footer.svelte"
 
   // ROUTES/PAGES
-  import Home from "./routes/Home.svelte"
   import About from "./routes/About.svelte"
   import Contact from "./routes/Contact.svelte"
-
   import Blog from "./routes/Blog.svelte"
 
   // PROPS
@@ -26,13 +24,10 @@
       <Header />
     </header>
     <main>
-      <Route path="/" component={Home} />
+      <Route path="/" component={About} />
       <Route path="about" component={About} />
       <Route path="contact" component={Contact} />
-
       <Route path="blog/*" component={Blog} />
-
-      <!-- <Route path="test" component={Test} /> -->
     </main>
     <footer>
       <Footer />
@@ -41,8 +36,6 @@
 </Router>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
-
   page {
     display: flex;
     flex-direction: column;

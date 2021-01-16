@@ -7,6 +7,7 @@
 
   // COMPONENTS
   import ColorMode from "./ColorMode.svelte"
+  import NavLinks from "./NavLinks.svelte"
 
   // LOCAL VARIABLES
   let now = new Date()
@@ -17,15 +18,7 @@
   <div class="copyright">&copy;{year} {siteName}</div>
 </copyright>
 <div class="footer-links">
-  <div class="footer-link">
-    <Link to="/">Home</Link>
-  </div>
-  <div class="footer-link">
-    <Link to="/contact">Contact</Link>
-  </div>
-  <div class="footer-link">
-    <Link to="/about">About</Link>
-  </div>
+  <NavLinks />
 </div>
 <div class="color-mode">
   <ColorMode />
@@ -48,7 +41,7 @@
     margin-top: 5px;
   }
 
-  .footer-link {
+  :global(.footer-links a) {
     margin: 0 10px;
     font-size: 0.8em;
   }

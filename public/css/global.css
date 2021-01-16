@@ -26,6 +26,11 @@ a:hover {
   background-color: var(--color_links_hover_bg);
 }
 
+p a,
+span a {
+  text-decoration: underline var(--color_highlight);
+}
+
 .visible {
   display: flex !important;
   visibility: visible;
