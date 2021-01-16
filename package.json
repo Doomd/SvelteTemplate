@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/username/repository.git"
+    "url": "git://github.com/Doomd/SvelteTemplate.git"
   },
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.1.0",
