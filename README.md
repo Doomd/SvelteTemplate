@@ -40,7 +40,7 @@ I also added the `svelte-routing` package so page routing is built in. I include
   npm i --save-dev prettier-plugin-svelte prettier
   ```
 
-## SITE STRUCTURE
+## Project Structure
 
 Read the [STRUCTURE](./Docs/STRUCTURE.md) documentation.
 

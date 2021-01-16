@@ -1,6 +1,6 @@
-# DOOMD SVELTE TEMPLATE
+# Project Structure
 
-There are dozens of ways to skin a svelte site...and mine constantly evolve, but my primary goal is to organize items by function, and so that it's relatively easy to find all your scripts by general function
+There are dozens of ways to skin a Svelte site...and I consistently re-organize, but my primary goal is to organize items by function, and so that it's relatively easy to find all your scripts by general function
 
 ## `/Docs`
 
