@@ -17,6 +17,7 @@ div#light {
   --color_border_1: #f1f1f1;
   --color_border_2: #70707044;
   --color_bg_2: #f1f1f1;
+  --color_code: #c05d00;
 
   --color_primary: #707070;
 
@@ -38,6 +39,7 @@ div#dark {
   --color_border_2: #70707044;
   --color_bg_2: #212121;
   --color_bg_2_odd: #212121;
+  --color_code: #ff9100;
 
   --color_primary: #f1f1f1;
 

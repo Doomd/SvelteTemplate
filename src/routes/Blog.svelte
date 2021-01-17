@@ -7,12 +7,7 @@
   export let location
 </script>
 
-<Page
-  vAlign="flex-start"
-  hAlign="flex-start"
-  pageTitle="Blog"
-  overflow={false}
-  {location}>
+<Page vAlign="flex-start" hAlign="flex-start" pageTitle="Blog" overflow={false} {location}>
   <Router>
     <div class="container">
       <div class="blog-list">

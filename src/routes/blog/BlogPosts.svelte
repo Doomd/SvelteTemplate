@@ -34,4 +34,7 @@
   author::before {
     content: "";
   }
+  .post-content {
+    padding-bottom: 15px;
+  }
 </style>

@@ -5,7 +5,7 @@
   // ROUTES/PAGES
   import About from "./routes/About.svelte"
   import Blog from "./routes/Blog.svelte"
-  import Contact from "./routes/Contact.svelte"
+  // import Contact from "./routes/Contact.svelte"
   import FullPage from "./routes/FullPage.svelte"
 
   import ChangeLog from "./routes/ChangeLog.svelte"
@@ -27,7 +27,7 @@
     <Route path="/" component={About} />
     <Route path="about" component={About} />
     <Route path="blog/*" component={Blog} />
-    <Route path="contact" component={Contact} />
+    <!-- <Route path="contact" component={Contact} /> -->
     <Route path="fullpage" component={FullPage} />
     <Route path="test" component={Test} />
     <Route path="changelog" component={ChangeLog} />

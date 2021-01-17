@@ -1,6 +1,7 @@
 import svelte from "rollup-plugin-svelte"
 import resolve from "@rollup/plugin-node-resolve"
 import commonjs from "@rollup/plugin-commonjs"
+import copy from "rollup-plugin-copy"
 import livereload from "rollup-plugin-livereload"
 import { terser } from "rollup-plugin-terser"
 import css from "rollup-plugin-css-only"
@@ -19,14 +20,10 @@ function serve() {
   return {
     writeBundle() {
       if (server) return
-      server = require("child_process").spawn(
-        "npm",
-        ["run", "start", "--", "--dev"],
-        {
-          stdio: ["ignore", "inherit", "inherit"],
-          shell: true,
-        }
-      )
+      server = require("child_process").spawn("npm", ["run", "start", "--", "--dev"], {
+        stdio: ["ignore", "inherit", "inherit"],
+        shell: true,
+      })
 
       process.on("SIGTERM", toExit)
       process.on("exit", toExit)
@@ -80,6 +77,9 @@ export default {
         // enable run-time checks when not in production
         dev: !production,
       },
+    }),
+    copy({
+      targets: [{ src: "docs/RELEASES.md", dest: "public/docs" }],
     }),
     css({ output: "bundle.css" }),
 

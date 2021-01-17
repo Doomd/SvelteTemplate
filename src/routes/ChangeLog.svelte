@@ -13,18 +13,15 @@
 </script>
 
 <Page vAlign="flex-start" hAlign="center" pageTitle="ChangeLog" {location}>
-  <div class="wrapper">
+  <div class="md">
     {@html changeLog}
   </div>
 </Page>
 
 <style>
-  .wrapper {
+  .md {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-  }
-  p {
-    margin: 10px 0;
   }
 </style>

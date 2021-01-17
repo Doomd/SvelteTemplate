@@ -14,17 +14,27 @@
   let year = now.getFullYear()
 </script>
 
-<copyright>
-  <div class="copyright">&copy;{year} {siteName}</div>
-</copyright>
-<div class="footer-links">
-  <NavLinks />
-</div>
-<div class="color-mode">
-  <ColorMode />
-</div>
+<footer>
+  <copyright>
+    <div class="copyright">&copy;{year} {siteName}</div>
+  </copyright>
+  <div class="footer-links">
+    <NavLinks />
+  </div>
+  <div class="color-mode">
+    <ColorMode />
+  </div>
+</footer>
 
 <style>
+  footer {
+    border-top: 1px solid var(--color_border_1);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_bg_1);
+    padding: 15px 0;
+  }
   copyright {
     display: flex;
     position: relative;

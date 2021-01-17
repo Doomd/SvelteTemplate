@@ -8,39 +8,65 @@
   import NavLinks from "./NavLinks.svelte"
 </script>
 
-<div class="logo">
-  <Link to="/">{siteName}</Link>
-</div>
-
-<nav>
-  <NavLinks />
-</nav>
+<header>
+  <div class="site-branding">
+    <Link to="/">{siteName}</Link>
+  </div>
+  <nav>
+    <NavLinks />
+  </nav>
+</header>
 
 <style>
-  .logo {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    font-size: 2.5em;
+  header {
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color_border_1);
+    flex-wrap: wrap;
+    height: auto;
+    background-color: var(--color_bg_1);
   }
-  :global(.logo a) {
+  .site-branding {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 2em;
+    white-space: nowrap;
+    flex: 1;
+  }
+  :global(.site-branding a) {
     color: var(--color_highlight);
   }
-  :global(.logo a:hover) {
+  :global(.site-branding a:hover) {
     color: var(--color_primary);
   }
 
   nav {
     display: flex;
     position: relative;
-    height: 100%;
     justify-content: flex-end;
     align-items: center;
-    flex: 1 1;
+    padding: 15px 0;
+    flex: 1;
   }
   :global(nav .link) {
     margin-left: 15px;
+  }
+  :global(nav .link:first-child) {
+    margin-left: unset;
+  }
+  @media (max-width: 767px) {
+    header {
+      /* display: inline-block; */
+    }
+    .site-branding {
+      padding: 15px 0 0 0;
+      min-width: 100%;
+      justify-content: center;
+    }
+    nav {
+      justify-content: space-evenly;
+      width: 100%;
+    }
   }
 </style>

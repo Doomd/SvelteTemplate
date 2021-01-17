@@ -28,6 +28,14 @@ function backDate() {
 
 function fillBlog(num) {
   let blog = []
+  let firstEntry = {
+    id: randId(),
+    date: today,
+    title: "my first blog entry",
+    content: loremIpsum({ ...loremPG, count: getRandomBetween(1, 15) }),
+    active: true,
+  }
+  blog.push(firstEntry)
   for (let i = 0; i < num; i++) {
     let post = {
       id: randId(),
