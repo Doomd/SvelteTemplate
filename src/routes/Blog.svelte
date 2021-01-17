@@ -10,7 +10,7 @@
 <Page
   vAlign="flex-start"
   hAlign="flex-start"
-  heading="Blog"
+  pageTitle="Blog"
   overflow={false}
   {location}>
   <Router>

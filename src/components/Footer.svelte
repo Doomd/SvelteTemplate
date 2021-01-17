@@ -6,7 +6,7 @@
   import { siteName } from "../js/constants"
 
   // COMPONENTS
-  import ColorMode from "./ColorMode.svelte"
+  import ColorMode from "./ColorModeToggle.svelte"
   import NavLinks from "./NavLinks.svelte"
 
   // LOCAL VARIABLES

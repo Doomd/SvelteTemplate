@@ -8,6 +8,22 @@ If you want the "latest" then stick to the develop branch. If you want the lates
 
 Use master branch for releases:
 
+## v0.0.3
+
+2020-01-17
+
+### NEW FEATURES & CHANGES:
+
+- Pages via the `<Page />` componenent can now optionally hide the header and footer:
+  - So if you want a content page to not display the header and/or footer, you can specificy `header={false}` and `footer={false}` respectively in the `<Page />` component.
+  - This means that the App.svelte file only has one semantic element (`<page>`), because I moved the `<header>` and `<footer>` elements to the `<Page />` component since their visibility is now optional via props.
+- Major rewrite to ColorMode functionality
+  - The toggle button (by default in the footer) and color-mode logic had to be split into different components. The necessity of this became apparent when full screen pages (without the footer that had the color mode toggle in it), didn't load the color-mode on page refreshes, or direct links to those full pages.
+  - `<ColorModeToggle />` is a toggle button only now, and it's only job is to toggle the value of the `$colorMode` store from '`dark`' to '`light`'
+  - So now, the `<ColorModeLogic />` component lives in App.svelte and will always react to changes to the `$colorMode` store.
+  - ColorModeLogic will also listen for changes to the user's system color via `window.matchMedia('(prefers-color-scheme: dark)')`, and toggle the site's color to the newly selected color-mode!
+  -
+
 ## v0.0.2
 
 2020-01-16

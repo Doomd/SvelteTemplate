@@ -1,19 +1,9 @@
 <script>
   // STORES
   import { colorMode } from "../js/stores"
-  let localColorMode = localStorage.getItem("colorMode")
+
   let light // we'll bind the toggle button to this boolean
-  // If colorMode not set in localStorage:
-  // Default to: > System Preference (if available) > arbitrary default
-  if (
-    localColorMode == "dark" ||
-    (window.matchMedia("(prefers-color-scheme: dark)").matches &&
-      localColorMode != "light")
-  ) {
-    light = false
-  } else {
-    light = true
-  }
+  $: $colorMode, toggleButton()
   $: light, toggleColorMode()
 
   function toggleColorMode() {
@@ -22,8 +12,9 @@
     } else {
       $colorMode = "dark"
     }
-    localStorage.setItem("colorMode", $colorMode)
-    document.documentElement.setAttribute("color-mode", $colorMode)
+  }
+  function toggleButton() {
+    $colorMode == "light" ? (light = true) : (light = false)
   }
 </script>
 

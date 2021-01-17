@@ -9,6 +9,31 @@
 
   export let header = true
   export let footer = true
+
+  // // STORES
+  // import { colorMode } from "../js/stores"
+  // import { defaultColorMode } from "../js/constants"
+  // import { onMount } from "svelte"
+  // // REACTIVE
+  // $: $colorMode, changeColorMode()
+
+  // function changeColorMode() {
+  //   console.log(`before $colorMode:`, $colorMode)
+  //   let localCM = localStorage.getItem("colorMode")
+  //   let cm = $colorMode ? $colorMode : localCM
+  //   // If there's no $colorMode store OR localStorage setting, set to default
+  //   if (!cm) {
+  //     $colorMode = defaultColorMode
+  //     localStorage.setItem("colorMode", defaultColorMode)
+  //     // if there IS a localStorage setting, set $colorMode store to it
+  //   } else {
+  //     $colorMode = cm
+  //   }
+  //   // change the "color-mode" html attribute!
+  //   document.documentElement.setAttribute("color-mode", $colorMode)
+  //   console.log(`after $colorMode:`, $colorMode)
+  // }
+  // onMount(() => changeColorMode())
 </script>
 
 {#if header}
