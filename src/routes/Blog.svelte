@@ -1,7 +1,7 @@
 <script>
   import { Router } from "svelte-routing"
 
-  import Page from "../components/Page.svelte"
+  import Page from "../components/Page2.svelte"
   import BlogList from "./blog/BlogList.svelte"
   import BlogPosts from "./blog/BlogPosts.svelte"
   export let location

@@ -1,22 +1,63 @@
 <script>
+  import Header from "./Header.svelte"
+  import Footer from "./Footer.svelte"
   // PROPS
   export let vAlign = "flex-start"
   export let hAlign = "center"
-  export let heading = ""
+  export let pageTitle = "Page Title"
   export let overflow = true
+
+  export let header = true
+  export let footer = true
 </script>
 
-<div
-  class="content"
-  class:overflow
-  style="justify-content: {vAlign}; align-items: {hAlign}">
-  {#if heading}
-    <h1>{heading}</h1>
-  {/if}
-  <slot>Content Goes Here</slot>
-</div>
+{#if header}
+  <header>
+    <Header />
+  </header>
+{/if}
+<main>
+  <div
+    class="content"
+    class:overflow
+    style="justify-content: {vAlign}; align-items: {hAlign}">
+    {#if pageTitle}
+      <h1>{pageTitle}</h1>
+    {/if}
+    <slot>Content Goes Here</slot>
+  </div>
+</main>
+{#if footer}
+  <footer>
+    <Footer />
+  </footer>
+{/if}
 
 <style>
+  header,
+  footer {
+    flex: 0 1;
+    display: flex;
+    padding: 10px 15px;
+    background-color: var(--color_bg_1);
+  }
+  header {
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color_border_1);
+  }
+  footer {
+    border-top: 1px solid var(--color_border_1);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    flex: 1 1;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
   .content {
     display: flex;
     flex-direction: column;
