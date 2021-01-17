@@ -1,5 +1,5 @@
 <script>
-  import Page from "../components/Page2.svelte"
+  import Page from "../components/Page.svelte"
   export let location
 </script>
 

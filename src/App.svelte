@@ -8,6 +8,7 @@
   import Contact from "./routes/Contact.svelte"
   import FullPage from "./routes/FullPage.svelte"
 
+  import ChangeLog from "./routes/ChangeLog.svelte"
   import Test from "./routes/Test.svelte"
 
   // COMPONENTS
@@ -29,6 +30,7 @@
     <Route path="contact" component={Contact} />
     <Route path="fullpage" component={FullPage} />
     <Route path="test" component={Test} />
+    <Route path="changelog" component={ChangeLog} />
   </page>
 </Router>
 <ColorModeLogic />

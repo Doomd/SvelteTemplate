@@ -1,12 +1,12 @@
 <script>
-  import Page from "../components/Page2.svelte"
+  import Page from "../components/Page.svelte"
   export let location
 </script>
 
 <Page
   vAlign="flex-start"
   hAlign="center"
-  pageTitle="Contact"
+  pageTitle="Full Page Example"
   header={false}
   footer={false}
   {location}>
