@@ -12,13 +12,14 @@ If you want the "latest" then stick to the develop branch. If you want the lates
 
 ### New FEATURES:
 
-- I implemented the `marked` npm plugin so Svelte can read the `/docs/RELEASES.md` file directly, then parse it to html and display it in the browser.
+- Implemented the `marked` npm plugin so Svelte can read the `/docs/RELEASES.md` file directly, then parse it to html and display it in the browser.
   - So now, the changelog will be viewable from the demo site at:
     https://sveltetemplate.doomd.dev/changelog
 
 ### TWEAKS
 
-- The site name in the header will no longer wrap. The nav links will wrap below it.
+- To make the template more mobile friendly, the site name in the header will no longer wrap. The nav links will wrap below it below 768px wide.
+- Minor CSS fixes
 
 ## v0.0.3
 
