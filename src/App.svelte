@@ -9,7 +9,7 @@
   import FullPage from "./routes/FullPage.svelte"
 
   import ChangeLog from "./routes/ChangeLog.svelte"
-  import Test from "./routes/Test.svelte"
+  import Test from "./routes/LodashUnique2.svelte"
 
   // COMPONENTS
   import ColorModeLogic from "./components/ColorModeLogic.svelte"

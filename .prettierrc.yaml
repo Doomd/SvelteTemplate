@@ -1,6 +1,6 @@
 # Prettier Options: https://prettier.io/docs/en/options.html
 semi: false
-printWidth: 100
+printWidth: 120
 # Svelte Prettier: https://github.com/sveltejs/prettier-plugin-svelte
 svelteSortOrder: "scripts-markup-styles"
 svelteStrictMode: false

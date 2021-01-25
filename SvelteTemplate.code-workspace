@@ -22,6 +22,8 @@
       "titleBar.inactiveBackground": "#ff3e0099",
       "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "workbench.colorTheme": "Gruvbox Dark Hard"
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "editor.fontFamily": "'Operator Mono', 'Fira Code', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 16
   }
 }
